@@ -1854,12 +1854,8 @@
 
     if-eqz v0, :cond_4
 
-    .line 668
-    invoke-virtual {v0}, Landroid/net/wifi/WifiManager;->isWifiEnabled()Z
+const/4 v0, 0x0
 
-    move-result v0
-
-    .line 669
     .local v0, "isWifiEnabled":Z
     iget-boolean v2, p0, Lcom/mediatek/wfo/impl/WifiPdnHandler;->mIsWifiEnabled:Z
 
